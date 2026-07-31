@@ -1,0 +1,9 @@
+# Core dependencies
+numpy==1.26.4
+opencv-python==4.10.0.84
+tensorflow==2.15.0
+
+# Optional but recommended
+tensorflow-hub==0.16.1   # For loading other pre-trained models easily
+matplotlib==3.9.0        # For visualization if you extend the project
+jupyter==1.0.0           # If you want to experiment interactively

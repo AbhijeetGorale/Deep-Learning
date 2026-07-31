@@ -1,0 +1,61 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Logs & Outputs ---
+*.log
+*.out
+*.err
+
+# --- OS / Editor Files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.iml
+
+# --- TensorFlow / Keras ---
+checkpoint/
+saved_model/
+*.h5
+*.pb
+*.ckpt
+*.tflite
+
+# --- OpenCV / Images ---
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+
+# --- Cache ---
+.cache/
+__cache__/
+*.tmp
+
+# --- Build / Dist ---
+build/
+dist/
+*.spec
