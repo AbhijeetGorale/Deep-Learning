@@ -32,7 +32,7 @@ ImageClassifier/
 ## ⚙️ Requirements
 Install the following dependencies before running the project:
 
-```bash
+bash
 pip install -r requirements.txt
 
 ▶️ Usage
@@ -76,4 +76,5 @@ Exploring deep learning, Python, and Golang
 
 GitHub: https://github.com/AbhijeetGorale
 
-Linkdin: https://github.com/AbhijeetGorale
+Linkdin: www.linkedin.com/in/abhijeetgorale
+
