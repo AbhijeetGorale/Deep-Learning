@@ -73,3 +73,8 @@ Most files build the underlying math and mechanics of neural networks **from scr
 
 ---
 
+## 👤 Author
+
+**Abhijeet Gorale**
+Python Developer | Backend & AI/ML Enthusiast
+🔗 [GitHub](https://github.com/AbhijeetGorale)
