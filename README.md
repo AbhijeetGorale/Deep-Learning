@@ -33,3 +33,18 @@ A structured, from-scratch journey through the foundations of Artificial Neural 
 *(More files/projects are added as the practice continues.)*
 
 ---
+
+## 🎯 Learning Path
+
+This repo follows a deliberate, bottom-up progression:
+
+1. **Neuron Fundamentals** — how a single artificial neuron computes an output
+2. **Activation Functions** — ReLU, Sigmoid, and when to use which
+3. **Network Architecture** — stacking neurons into layers, building full ANNs
+4. **Training Mechanics** — forward pass, loss calculation, and training loop steps
+5. **Loss Functions** — MSE, MAE, and Binary Cross-Entropy, and where each applies
+6. **Backpropagation** — computing and visualizing gradients for weight updates
+7. **Applied Projects** — real feed-forward networks on regression and classification tasks
+
+---
+
