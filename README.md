@@ -48,3 +48,28 @@ This repo follows a deliberate, bottom-up progression:
 
 ---
 
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **Core Libraries:** NumPy (from-scratch implementations), Matplotlib (graphical visualizations)
+- **Concepts Covered:** Perceptrons, Activation Functions, Forward Propagation, Backpropagation, Gradient Descent, Loss Functions, Feed-Forward Neural Networks (FNN)
+
+---
+
+## 🚀 Featured Projects
+
+### 📈 Salary Prediction (Regression)
+A feed-forward neural network trained to predict salary based on input features — demonstrates regression with continuous output and MSE/MAE loss.
+
+### 🎓 Student Result Classification
+A feed-forward neural network trained to classify student outcomes — demonstrates binary/multi-class classification using cross-entropy loss.
+
+---
+
+## 📖 About This Repo
+
+Most files build the underlying math and mechanics of neural networks **from scratch** (without high-level frameworks like TensorFlow/PyTorch) to build strong intuition — followed by applied mini-projects to validate the concepts on real data.
+
+---
+
