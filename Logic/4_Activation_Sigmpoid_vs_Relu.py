@@ -32,7 +32,7 @@ def relu(z):
 # ---------------------------------------------------------
 # Generic neuron → works with any activation function
 
-def Marvellous_neuron_forward(inputs, weights, bias, activation_func):
+def neuron_forward(inputs, weights, bias, activation_func):
 
     print("\n----- NEURON CALCULATION START -----\n")
 
@@ -113,11 +113,11 @@ def main():
 
     # Sigmoid neuron
     print("=== Sigmoid Neuron ===")
-    Marvellous_neuron_forward(inputs, weights, bias, sigmoid)
+    neuron_forward(inputs, weights, bias, sigmoid)
 
     # ReLU neuron
     print("=== ReLU Neuron ===")
-    Marvellous_neuron_forward(inputs, weights, bias, relu)
+    neuron_forward(inputs, weights, bias, relu)
 
     # Plot comparison
     plot_sigmoid_relu()
