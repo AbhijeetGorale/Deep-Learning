@@ -13,24 +13,24 @@ import math
 # Formula       : ReLU(x) = max(0, x)
 # Use           : Commonly used in hidden layers
 # ---------------------------------------------------------
-def Marvellous_ReLU(value):
+def ReLU(value):
     return max(0, value)
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Sigmoid
+# Function Name : Sigmoid
 # Description   : Applies Sigmoid activation function
 # Formula       : 1 / (1 + e^(-x))
 # Use           : Commonly used in output layer for
 #                 binary classification
 # Output Range  : 0 to 1
 # ---------------------------------------------------------
-def Marvellous_Sigmoid(value):
+def Sigmoid(value):
     return 1 / (1 + math.exp(-value))
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Calculate_Weighted_Sum
+# Function Name : Calculate_Weighted_Sum
 # Description   : Calculates weighted sum of inputs
 # Formula       : z = (x1*w1 + x2*w2 + ... + xn*wn) + b
 # Parameters    :
@@ -39,20 +39,20 @@ def Marvellous_Sigmoid(value):
 #   bias    -> Bias value
 # Returns       : Weighted sum
 # ---------------------------------------------------------
-def Marvellous_Calculate_Weighted_Sum(inputs, weights, bias):
+def Calculate_Weighted_Sum(inputs, weights, bias):
     weighted_sum = sum(weight * input_value for weight, input_value in zip(weights, inputs)) + bias
     return weighted_sum
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Display_Multiplication_Details
+# Function Name : Display_Multiplication_Details
 # Description   : Displays step-by-step multiplication of
 #                 inputs and weights for one neuron
 # Parameters    :
 #   inputs  -> List of inputs
 #   weights -> List of weights
 # ---------------------------------------------------------
-def Marvellous_Display_Multiplication_Details(inputs, weights):
+def Display_Multiplication_Details(inputs, weights):
     print("  Step 1: Multiply inputs by corresponding weights")
     for index in range(len(inputs)):
         print(
@@ -61,7 +61,7 @@ def Marvellous_Display_Multiplication_Details(inputs, weights):
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Process_Hidden_Layer
+# Function Name : Process_Hidden_Layer
 # Description   : Processes all neurons of hidden layer
 #                 using ReLU activation function
 # Parameters    :
@@ -70,7 +70,7 @@ def Marvellous_Display_Multiplication_Details(inputs, weights):
 #   hidden_biases  -> Bias list for hidden neurons
 # Returns          : List of hidden layer outputs
 # ---------------------------------------------------------
-def Marvellous_Process_Hidden_Layer(inputs, hidden_weights, hidden_biases):
+def Process_Hidden_Layer(inputs, hidden_weights, hidden_biases):
     hidden_outputs = []
 
     print("\n================ HIDDEN LAYER ================\n")
@@ -82,15 +82,15 @@ def Marvellous_Process_Hidden_Layer(inputs, hidden_weights, hidden_biases):
         current_bias = hidden_biases[neuron_index]
 
         # Display multiplication details
-        Marvellous_Display_Multiplication_Details(inputs, current_weights)
+        Display_Multiplication_Details(inputs, current_weights)
 
         # Calculate weighted sum
-        z_value = Marvellous_Calculate_Weighted_Sum(inputs, current_weights, current_bias)
+        z_value = Calculate_Weighted_Sum(inputs, current_weights, current_bias)
         print(f"  Step 2: Add all multiplication results and bias {current_bias}")
         print(f"    z = {z_value:.3f}")
 
         # Apply ReLU activation
-        activated_output = Marvellous_ReLU(z_value)
+        activated_output = ReLU(z_value)
         print(f"  Step 3: Apply ReLU activation")
         print(f"    ReLU({z_value:.3f}) = {activated_output:.3f}\n")
 
@@ -100,7 +100,7 @@ def Marvellous_Process_Hidden_Layer(inputs, hidden_weights, hidden_biases):
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Process_Output_Layer
+# Function Name : Process_Output_Layer
 # Description   : Processes output layer neuron using
 #                 Sigmoid activation function
 # Parameters    :
@@ -109,7 +109,7 @@ def Marvellous_Process_Hidden_Layer(inputs, hidden_weights, hidden_biases):
 #   output_bias    -> Bias of output neuron
 # Returns          : Final weighted sum and final output
 # ---------------------------------------------------------
-def Marvellous_Process_Output_Layer(hidden_outputs, output_weights, output_bias):
+def Process_Output_Layer(hidden_outputs, output_weights, output_bias):
     print("\n================ OUTPUT LAYER ================\n")
 
     print("Output Neuron:")
@@ -122,12 +122,12 @@ def Marvellous_Process_Output_Layer(hidden_outputs, output_weights, output_bias)
         )
 
     # Calculate weighted sum for output layer
-    z_output = Marvellous_Calculate_Weighted_Sum(hidden_outputs, output_weights, output_bias)
+    z_output = Calculate_Weighted_Sum(hidden_outputs, output_weights, output_bias)
     print(f"  Step 2: Add all multiplication results and bias {output_bias}")
     print(f"    z = {z_output:.3f}")
 
     # Apply Sigmoid activation
-    final_output = Marvellous_Sigmoid(z_output)
+    final_output = Sigmoid(z_output)
     print("  Step 3: Apply Sigmoid activation")
     print(f"    Sigmoid({z_output:.3f}) = {final_output:.3f}")
 
@@ -135,13 +135,13 @@ def Marvellous_Process_Output_Layer(hidden_outputs, output_weights, output_bias)
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_Display_Network_Summary
+# Function Name : Display_Network_Summary
 # Description   : Displays final outputs of network
 # Parameters    :
 #   hidden_outputs -> Hidden layer outputs
 #   final_output   -> Output layer final value
 # ---------------------------------------------------------
-def Marvellous_Display_Network_Summary(hidden_outputs, final_output):
+def Display_Network_Summary(hidden_outputs, final_output):
     print("\n================ FINAL SUMMARY ================\n")
     print(f"Hidden Layer Outputs : {hidden_outputs}")
     print(f"Final Network Output : {final_output:.3f}")
@@ -154,14 +154,14 @@ def Marvellous_Display_Network_Summary(hidden_outputs, final_output):
 
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_ANN_Forward_Pass
+# Function Name : ANN_Forward_Pass
 # Description   : Complete forward pass of ANN
 # Parameters    :
 #   inputs -> List of input values
 # Flow          :
 #   Input Layer -> Hidden Layer -> Output Layer
 # ---------------------------------------------------------
-def Marvellous_ANN_Forward_Pass(inputs):
+def ANN_Forward_Pass(inputs):
     print("================ INPUT LAYER ================\n")
     print(f"Input x1 = {inputs[0]}")
     print(f"Input x2 = {inputs[1]}")
@@ -188,21 +188,21 @@ def Marvellous_ANN_Forward_Pass(inputs):
     output_bias = 0.2
 
     # Process hidden layer
-    hidden_outputs = Marvellous_Process_Hidden_Layer(
+    hidden_outputs = Process_Hidden_Layer(
         inputs,
         hidden_weights,
         hidden_biases
     )
 
     # Process output layer
-    z_output, final_output = Marvellous_Process_Output_Layer(
+    z_output, final_output = Process_Output_Layer(
         hidden_outputs,
         output_weights,
         output_bias
     )
 
     # Display summary
-    Marvellous_Display_Network_Summary(hidden_outputs, final_output)
+    Display_Network_Summary(hidden_outputs, final_output)
 
 
 # ---------------------------------------------------------
@@ -215,7 +215,7 @@ def main():
     inputs = [2.0, 3.0]
 
     # Start ANN forward pass
-    Marvellous_ANN_Forward_Pass(inputs)
+    ANN_Forward_Pass(inputs)
 
 if __name__ == "__main__":
     main()
