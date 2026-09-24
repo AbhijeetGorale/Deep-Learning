@@ -8,7 +8,7 @@
 import math
 
 # ---------------------------------------------------------
-# Function Name : Marvellous_ReLU
+# Function Name : ReLU
 # Description   : Applies ReLU activation function
 # Formula       : ReLU(x) = max(0, x)
 # Use           : Commonly used in hidden layers
