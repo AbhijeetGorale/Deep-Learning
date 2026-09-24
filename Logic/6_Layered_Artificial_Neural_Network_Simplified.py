@@ -1,7 +1,7 @@
 import math
 
 print("\n===================================================")
-print("        MARVELLOUS FORWARD PROPAGATION DEMO")
+print("         FORWARD PROPAGATION DEMO")
 print("===================================================\n")
 
 
