@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 print("\n===================================================")
-print("     MARVELLOUS ANN FORWARD PROPAGATION DEMO")
+print("     ANN FORWARD PROPAGATION DEMO")
 print("===================================================\n")
 
 
